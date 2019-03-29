@@ -3,7 +3,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
 import RVUI from '../packages/index'
 
 import '../packages/theme-default/lib/index.css'

@@ -22,8 +22,22 @@
             @include colorType($type, 'border');
             &:hover{
                 @include liteColor($type, 'background', 10%);
-                color: $--color-white
+                color: $--color-white;
+
             }
         }
     }
+}
+.is--disabled{
+  @each $type in (primary, success, info, warning, danger) {
+      @include liteColor($type, 'background', 10%);
+      color: $--color-white;
+      cursor: help;
+      @include colorType($type, 'border');
+      &:hover{
+        @include liteColor($type, 'background', 10%);
+        color: $--color-white;
+        @include colorType($type, 'border');
+      }
+  }
 }

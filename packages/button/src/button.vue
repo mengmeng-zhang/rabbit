@@ -1,8 +1,5 @@
 <template>
     <button class="ra--button"
-    :disabled="disabled || loading"
-    :autofocus="autofocus"
-    :type="type"
     :class="[
         type ? 'ra--button--' + type : '',
         {
