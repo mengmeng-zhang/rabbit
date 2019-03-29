@@ -10,7 +10,6 @@ const install = function(Vue, opts = {}){
         Vue.component(component.name, component);
     });
     // MetaInfo.use(Vue)
-    Vue.prototype.$button = RButton
 }
 
 /* istanbul ignore if */

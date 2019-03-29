@@ -1,0 +1,19 @@
+@import '../common/var.scss';
+@function getColorName($type){
+    @if $type == primary{
+        @return $--color-primary
+    }
+    @if $type == success{
+        @return $--color-success
+    }
+    @if $type == info{
+        @return $--color-info
+    }
+    @if $type == warning{
+        @return $--color-warning
+    }
+    @if $type == danger{
+        @return $--color-danger
+    }
+
+}

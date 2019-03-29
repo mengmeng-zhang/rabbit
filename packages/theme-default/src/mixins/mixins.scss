@@ -1,0 +1,8 @@
+@import '../common/var.scss';
+@import '../mixins/function.scss';
+@mixin colorType($type, $back, $lite: '', $num : 90%) {
+    #{$back}-color: getColorName($type)
+}
+@mixin liteColor($type, $back, $num : 90%) {
+    #{$back}-color: lighten(getColorName($type), $num)
+}

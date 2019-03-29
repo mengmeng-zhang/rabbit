@@ -1,4 +1,6 @@
 @import './common/var';
+@import './mixins/function.scss';
+@import './mixins/mixins.scss';
 .ra--button{
     padding: 8px 15px;
     display: inline-block;
@@ -7,18 +9,21 @@
     outline: none;
     color: $--color-text-regular;
     border-radius: $--border-radius-base;
+    cursor: pointer;
     &:hover{
         background-color: $--color-primary-light-9;
         color: $--color-primary-light-1;
         border-color: $--color-primary-light-6;
     }
-}
-.ra--button--primary{
-    background-color: $--color-primary;
-    color: $--color-white;
-    border-color: $--color-primary;
-    &:hover{
-        background-color: $--color-primary-light-2;
-        color: $--color-white
+    @each $type in (primary, success, info, warning, danger) {
+        &--#{$type}{
+            @include colorType($type, 'background');
+            color: $--color-white;
+            @include colorType($type, 'border');
+            &:hover{
+                @include liteColor($type, 'background', 10%);
+                color: $--color-white
+            }
+        }
     }
 }
