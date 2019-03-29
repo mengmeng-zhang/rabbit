@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <router-view/>
+    <RButton>默认按钮</RButton>
+    <RButton
+    type="primary"
+    disabled>主要按钮</RButton>
+    <!-- <router-view/> -->
   </div>
 </template>
 
@@ -9,7 +13,6 @@ export default {
   name: 'App'
 }
 </script>
-
-<style>
+<style lang="scss" scoped>
 
 </style>

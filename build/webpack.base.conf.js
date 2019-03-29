@@ -87,6 +87,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('examples'),
+      '~': resolve('packages')
     }
   },
   module: {
@@ -130,7 +131,11 @@ module.exports = {
         test: /\.md$/,
         loader: 'vue-markdown-loader',
         options: vueMarkdown
-      }
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      },
     ]
   },
   node: {

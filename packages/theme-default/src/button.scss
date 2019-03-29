@@ -1,0 +1,24 @@
+@import './common/var';
+.ra--button{
+    padding: 8px 15px;
+    display: inline-block;
+    background-color: $--checkbox-button-checked-font-color;
+    border: 1px solid $--color-text-placeholder;
+    outline: none;
+    color: $--color-text-regular;
+    border-radius: $--border-radius-base;
+    &:hover{
+        background-color: $--color-primary-light-9;
+        color: $--color-primary-light-1;
+        border-color: $--color-primary-light-6;
+    }
+}
+.ra--button--primary{
+    background-color: $--color-primary;
+    color: $--color-white;
+    border-color: $--color-primary;
+    &:hover{
+        background-color: $--color-primary-light-2;
+        color: $--color-white
+    }
+}
