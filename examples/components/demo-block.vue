@@ -31,6 +31,9 @@
 </script>
 
 <style lang="scss" type="text/less">
+  .docs-demo-wrapper{
+    padding-top: 20px
+  }
   .demo-container {
     transition: max-height .3s ease;
     overflow: hidden;
@@ -62,7 +65,7 @@
   .docs-demo__code,
   .highlight-wrapper,
   .docs-demo__meta {
-    padding: 0 20px;
+    padding: 20px;
     overflow-y: auto;
   }
   .docs-demo__code {
