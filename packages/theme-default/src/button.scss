@@ -30,9 +30,10 @@
 }
 .is--disabled-{
   cursor: not-allowed;
-  color: $--color-white;
-  background-color: $--checkbox-button-checked-font-color;
-  border: 1px solid $--color-text-placeholder;
+  // color: $--color-white;
+  background-color:  $--color-primary-light-9;
+  border-color: $--color-primary-light-6;
+  color: $--color-primary-light-1;
   @each $type in (primary, success, info, warning, danger) {
     &#{$type}{
       cursor: not-allowed;

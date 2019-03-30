@@ -19,7 +19,6 @@ export default {
         for(let item in newValue){
           this.fontStyle += `${item}: ${newValue[item]};`
         }
-        // this.fontStyle = ''
       }
     }
   }

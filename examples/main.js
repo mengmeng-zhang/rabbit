@@ -4,11 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import RVUI from '../packages/index'
+import demoBlock from '@/components/demo-block.vue'
 
 import '../packages/theme-default/lib/index.css'
 
 Vue.use(RVUI)
-
+Vue.component('demo-block', demoBlock)
 Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({

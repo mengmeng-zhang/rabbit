@@ -1,20 +1,62 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-
-Vue.use(VueRouter)
-
-const routerPathConfig = [
-  {
-    'path': '/test',
-    'name': 'test',
-    'component': r => require.ensure([], () => r(require('@/components/HelloWorld')))
-  }, {
-    'path': '/',
-    'name': 'index',
-    'component': r => require.ensure([], () => r(require('@/docs/test.md')))
+export default (() => {
+  const routeNavrPath = {
+    logo: '',
+    path: [
+      {
+        title: '更新日志',
+        router: '/'
+      },
+      {
+        title: '开发指南'
+      },
+      {
+        name: '安装',
+        router: '/'
+      },
+      {
+        name: '快速上手',
+        router: '/'
+      },
+      {
+        title: '组件'
+      },
+      {
+        class: 'Basic'
+      },
+      {
+        name: 'Layout 布局',
+        router: '/'
+      },
+      {
+        name: 'Container 布局容器',
+        router: '/'
+      },
+      {
+        name: 'Color 色彩',
+        router: '/'
+      },
+      {
+        name: 'Typography 字体',
+        router: '/'
+      },
+      {
+        name: 'Border 边框',
+        router: '/'
+      },
+      {
+        name: 'Icon 图标',
+        router: '/icon',
+        mdName: 'icon'
+      },
+      {
+        name: 'Button 按钮',
+        router: '/button',
+        mdName: 'button'
+      },
+      {
+        class: 'Form'
+      }
+    ]
   }
-]
-
-export default new VueRouter({
-  routes: routerPathConfig
-})
+  return routeNavrPath
+})()
