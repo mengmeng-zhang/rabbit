@@ -11,11 +11,13 @@ export default (() => {
       },
       {
         name: '安装',
-        router: '/'
+        router: '/',
+        mdName: 'install'
       },
       {
         name: '快速上手',
-        router: '/'
+        router: '/started',
+        mdName: 'started'
       },
       {
         title: '组件'

@@ -1,9 +1,11 @@
 {
-  "name": "rabbit",
+  "name": "rabbit-vue-ui",
   "version": "1.0.0",
   "description": "A Vue.js 2.0 UI Toolkit for Web",
-  "author": "rabbit-man",
-  "private": true,
+  "author": "meng.zhang",
+  "license": "MIT",
+  "main": "packages/index.js",
+  "private": false,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
