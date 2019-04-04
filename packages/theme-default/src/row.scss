@@ -1,0 +1,22 @@
+// @import './common/var';
+.r-row{
+    position: relative;
+    box-sizing: border-box;
+}
+.r-row--flex{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start
+}
+.is-justify-center{
+    justify-content: center
+}
+.is-justify-right{
+    justify-content: right
+}
+.is-align-center{
+    align-items: center
+}
+.is-align-end{
+    align-items: flex-end
+}
