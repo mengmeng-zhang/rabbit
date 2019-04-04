@@ -7,14 +7,6 @@
         <router-view/>
       </div>
     </div>
-    <!-- <RButton>默认按钮</RButton>
-    <RButton type="primary">主要按钮</RButton>
-    <RButton type="success">主要按钮</RButton>
-    <RButton type="info" disabled>主要按钮</RButton>
-    <RButton type="warning" disabled>主要按钮</RButton>
-    <RButton type="danger" disabled>主要按钮</RButton>
-
-    <RIcon name="user-circle-o" :styles="{'font-size': '20px', color: 'red'}"></RIcon>-->
   </div>
 </template>
 

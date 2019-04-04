@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import RButton from '~/button'
 import RIcon from '~/icon'
+import RRow from '~/row'
 // import MetaInfo from '~/meta-info'
-const components = [RButton, RIcon]
+const components = [RButton, RIcon, RRow]
 
 const install = function (Vue, opts = {}) {
   components.forEach(component => {
@@ -19,5 +20,6 @@ install(Vue)
 export default {
   version: '1.0.0',
   RButton,
-  RIcon
+  RIcon,
+  RRow
 }
