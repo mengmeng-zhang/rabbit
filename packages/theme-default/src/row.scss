@@ -2,6 +2,9 @@
 .r-row{
     position: relative;
     box-sizing: border-box;
+    margin-bottom: 10px;
+    display: inline-block;
+    // width: 100%;
 }
 .r-row--flex{
     display: flex;

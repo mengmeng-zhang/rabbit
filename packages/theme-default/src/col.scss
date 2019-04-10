@@ -1,0 +1,14 @@
+$base_size: 100% / 12;
+.r-col{
+    padding: 0 10px;
+}
+
+
+@for $num from 1 to 13 {
+    .r-col-#{$num}{
+        width: $num * $base_size
+    }
+}
+.no-padding{
+    padding: 0;
+}
