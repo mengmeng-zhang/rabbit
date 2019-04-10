@@ -6,8 +6,6 @@
       <div class="router-content" :style="contentWidth">
         <r-row type="flex">
           <r-col class="r-col-6 no-padding">1111</r-col>
-          <r-col>1111</r-col>
-          <r-col>1111</r-col>
         </r-row>
         <router-view/>
       </div>
