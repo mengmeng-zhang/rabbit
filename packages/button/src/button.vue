@@ -33,8 +33,8 @@ export default {
         }
     },
     methods: {
-      buttonHandleClick(){
-        console.log(1)
+      buttonHandleClick(evt){
+        this.$emit('click', evt)
       },
       isDisabled(){
         if(this.plain){

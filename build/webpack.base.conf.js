@@ -58,6 +58,7 @@ const createLintingRule = () => ({
 })
 
 module.exports = {
+  // 基本目录，一个绝对路径，用于从配置中解析入口点和加载器。
   context: path.resolve(__dirname, '../'),
   entry: {
     app: './examples/main.js',
@@ -71,6 +72,7 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
+  // 配置模块的解析方式
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
@@ -127,6 +129,7 @@ module.exports = {
       },
     ]
   },
+  // 填充或者模拟node模块
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
     // source contains it (although only uses it if it's native).

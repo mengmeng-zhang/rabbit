@@ -45,19 +45,25 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     }
   },
   plugins: [
+    // 允许创建一个在编译时可以配置的全局常量。
     new webpack.DefinePlugin({
       'process.env': require('../config/dev.env')
     }),
+    // HMR
     new webpack.HotModuleReplacementPlugin(),
+    // 显示模块的相对路径 (只在启用HMR时生效)
     new webpack.NamedModulesPlugin(), // HMR shows correct file names in console on update.
+    // 在编译出现错误时，使用 NoEmitOnErrorsPlugin 来跳过输出阶段。
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
+    // 在webpack打包结束后，自动生成html文件，并把打包成的js文件自动引入到html中
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.html',
       inject: true
     }),
     // copy custom static assets
+    // 将单个文件或整个目录复制到构建目录。
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, '../static'),

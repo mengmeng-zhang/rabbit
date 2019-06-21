@@ -6,6 +6,8 @@
       <div class="router-content" :style="contentWidth">
         <r-row type="flex">
           <r-col class="r-col-6 no-padding">1111</r-col>
+          <r-button @click="openWindow('url1')"> 跳转一</r-button>
+          <r-button @click="openWindow('url2')"> 跳转二</r-button>
         </r-row>
         <router-view/>
       </div>
@@ -17,6 +19,7 @@
 import headerView from '@/components/header'
 import routerPath from '@/router.json.js'
 import routerNav from '@/components/routerNav'
+import config from '@/utils/app.config'
 export default {
   name: 'App',
   components: {
@@ -27,15 +30,22 @@ export default {
     return {
       routerPath,
       active: '',
-      contentWidth: 0
+      contentWidth: 0,
+      url1: 'https://hyv0sy.axshare.com/#g=1&p=%E9%85%8D%E7%BD%AE%E6%9D%83%E9%99%90',
+      url2: 'http://10.13.225.133/zh-cn/price/calculator/pass/MySQL-Cluster/'
     }
   },
   methods: {
     getWidth () {
       let clientWidth = document.querySelector('.main')
-      console.log(clientWidth)
-      // console.log('width:' + Number(clientWidth) - 200 + 'px')
       this.contentWidth = 'width:' + clientWidth - 200 + 'px'
+    },
+    openWindow(type){
+      console.log(window.menubar.visible)
+      if(!type){
+        return
+      }
+      // window.open(this[type], config.WINDOW_NAME)
     }
   },
   mounted(){
