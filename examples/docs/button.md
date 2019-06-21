@@ -72,6 +72,7 @@
     <r-button type="danger" circle><r-icon name="star"></r-icon></r-button>
 ```
 :::
+----
 
 ## 禁用状态
 
@@ -114,6 +115,7 @@
     <r-button type="danger" plain disabled>危险按钮</r-button>
 ```
 :::
+----
 
 ## 图标按钮
 带图标的按钮可增强辨识度（有文字）或节省空间（无文字）。
@@ -135,3 +137,4 @@
     <r-button type="primary"><r-icon name="signal"></r-icon></r-button>
 ```
 :::
+----

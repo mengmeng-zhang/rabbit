@@ -9,6 +9,8 @@ npm 安装
   npm i rabbit-vue-ui -S
 </div>
 
+----
+
 # CDN
 目前可以通过 [这里是cdn地址](https://github.com/mengmeng-zhang/rabbit) 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
 
@@ -20,3 +22,5 @@ npm 安装
 </div>
 
 如果是通过 npm 安装，并希望配合 webpack 使用，请阅读下一节：[快速上手](/started)。
+
+----
